@@ -13,6 +13,13 @@
       "skills": ["./skills/pop-pr"],
       "source": "./",
       "strict": false
+    },
+    {
+      "name": "pr-loop",
+      "description": "Go through PR review feedback one by one, prioritizing human comments over bots. Discuss each item, make changes, and push.",
+      "skills": ["./skills/pr-loop"],
+      "source": "./",
+      "strict": false
     }
   ]
 }

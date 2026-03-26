@@ -16,6 +16,12 @@ Create a PR from the current branch, then start a feedback loop that checks for 
 
 **Usage:** Say "pop pr", "pop a pr", or "ship it and watch"
 
+### pr-loop
+
+Go through PR review feedback one by one, prioritizing human comments over bots. Discuss each item, make changes together, then push.
+
+**Usage:** Say "pr loop", "go through PR comments", or "review feedback"
+
 ## Manual installation
 
 ```bash
