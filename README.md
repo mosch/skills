@@ -22,6 +22,14 @@ A collection of agent skills for Claude Code and other coding agents.
   npx skills@latest add mosch/skills/grill-me
   ```
 
+## Development
+
+- **improve-codebase-architecture** — Find deepening opportunities in a codebase, informed by the domain language in `CONTEXT.md` and the decisions in `docs/adr/`.
+
+  ```
+  npx skills@latest add mosch/skills/improve-codebase-architecture
+  ```
+
 ## Pull Requests
 
 - **pop-pr** — Create a PR from the current branch, then start a loop that checks for review comments and CI status every 5 minutes.
