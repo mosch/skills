@@ -2,25 +2,39 @@
 
 A collection of agent skills for Claude Code and other coding agents.
 
-## Installation
+## Planning & Design
 
-```bash
-npx skills add mosch/skills
-```
+- **to-prd** — Turn the current conversation context into a PRD and submit it as a GitHub issue. No interview — just synthesizes what you've already discussed.
 
-## Included skills
+  ```
+  npx skills@latest add mosch/skills/to-prd
+  ```
 
-### pop-pr
+- **to-issues** — Break any plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices.
 
-Create a PR from the current branch, then start a feedback loop that checks for review comments and CI status every 5 minutes. Handles the full lifecycle: push, create PR, monitor for reviews, address feedback, and verify CI.
+  ```
+  npx skills@latest add mosch/skills/to-issues
+  ```
 
-**Usage:** Say "pop pr", "pop a pr", or "ship it and watch"
+- **grill-me** — Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
 
-### pr-loop
+  ```
+  npx skills@latest add mosch/skills/grill-me
+  ```
 
-Go through PR review feedback one by one, prioritizing human comments over bots. Discuss each item, make changes together, then push.
+## Pull Requests
 
-**Usage:** Say "pr loop", "go through PR comments", or "review feedback"
+- **pop-pr** — Create a PR from the current branch, then start a loop that checks for review comments and CI status every 5 minutes.
+
+  ```
+  npx skills@latest add mosch/skills/pop-pr
+  ```
+
+- **pr-loop** — Go through PR review feedback one by one, prioritizing human comments over bots. Discuss each item, make changes, then push.
+
+  ```
+  npx skills@latest add mosch/skills/pr-loop
+  ```
 
 ## Manual installation
 
@@ -28,17 +42,8 @@ Go through PR review feedback one by one, prioritizing human comments over bots.
 git clone https://github.com/mosch/skills.git
 ```
 
-Then configure your agent to load skills from the cloned directory.
-
-## Contributing
-
-Contributions welcome!
-
-1. Fork the repository
-2. Add or improve skills in the `skills/` directory
-3. Test with actual development workflows
-4. Submit a pull request
+Then point your agent at the cloned directory.
 
 ## License
 
-MIT - See [LICENSE](LICENSE) for details
+MIT — see [LICENSE](LICENSE).
